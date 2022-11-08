@@ -43,9 +43,6 @@ class GameWonFragment : Fragment() {
                 .navigate(GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
         }
 
-//        Toast.makeText(context,"Total questions were ${argsReceivedFromBundle.numQuestions}" +
-//                " and correct answers were ${argsReceivedFromBundle.numCorrect}",Toast.LENGTH_SHORT).show()
-
         setHasOptionsMenu(true)
 
         return binding.root
