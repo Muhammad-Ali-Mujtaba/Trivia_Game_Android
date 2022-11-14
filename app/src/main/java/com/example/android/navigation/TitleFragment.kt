@@ -13,7 +13,6 @@ import com.example.android.navigation.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,11 +25,9 @@ class TitleFragment : Fragment() {
             Navigation.findNavController(view).navigate(TitleFragmentDirections.actionTitleFragment2ToGameFragment())
 
         }
-
         //enabling overflow menu about
         setHasOptionsMenu(true)
         return binding.root
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
@@ -42,4 +39,5 @@ class TitleFragment : Fragment() {
         return NavigationUI.onNavDestinationSelected(item, view!!.findNavController())
                 || super.onOptionsItemSelected(item)
     }
+
 }
